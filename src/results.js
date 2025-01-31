@@ -9,14 +9,11 @@ document.querySelector("#result").innerHTML = `<table border='solid'>
   </thead>
   <tbody>
     <tr>
-      <td>${params.fullname}</td><td>${params.sex}</td><td>${
-  params.dob
-}</td><td>${params.email}</td><td>${params.county}</td><td>${
-  params.telephone
-}</td>
+      <td>${params.fullname}</td><td>${params.sex}</td><td>${params.dob}</td><td>${params.email}</td><td>${params.county}</td><td>${params.telephone}</td>
     </tr>
   </tbody>
 </table>`;
+
 function getParams(b) {
   var c = b ? b.split("?")[1] : window.location.search.slice(1),
     d = {};
